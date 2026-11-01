@@ -1,0 +1,108 @@
+
+---
+
+*Program 1: Shopping Bill*
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n_qty, p_qty;
+    float n_price, p_price, total;
+    
+    cout << "Enter Notebook Price: ";
+    cin >> n_price;
+    cout << "Enter Notebook Quantity: ";
+    cin >> n_qty;
+    
+    cout << "Enter Pen Price: ";
+    cin >> p_price;
+    cout << "Enter Pen Quantity: ";
+    cin >> p_qty;
+    
+    total = (n_price * n_qty) + (p_price * p_qty);
+    
+    cout << "Total Shopping Bill = Rs. " << total << endl;
+    return 0;
+}
+---
+
+*Program 2: Monthly Electricity Bill*
+#include <iostream>
+using namespace std;
+
+int main() {
+    float units, rate = 25.0, total;
+    
+    cout << "Enter Units Consumed: ";
+    cin >> units;
+    
+    total = units * rate;
+    
+    cout << "Total Electricity Bill = Rs. " << total << endl;
+    return 0;
+}
+---
+
+*Program 3: Student Marks Calculator*
+#include <iostream>
+using namespace std;
+
+int main() {
+    float m1, m2, m3, m4, m5;
+    float total, percentage;
+    
+    cout << "Enter marks of 5 subjects: ";
+    cin >> m1 >> m2 >> m3 >> m4 >> m5;
+    
+    total = m1 + m2 + m3 + m4 + m5;
+    percentage = (total / 500) * 100;
+    
+    cout << "Total Marks = " << total << " / 500" << endl;
+    cout << "Percentage = " << percentage << "%" << endl;
+    return 0;
+}
+---
+
+*Program 4: Salary Calculator*
+#include <iostream>
+using namespace std;
+
+int main() {
+    float basic, hra, medical, gross;
+    
+    cout << "Enter Basic Salary: ";
+    cin >> basic;
+    cout << "Enter House Rent Allowance: ";
+    cin >> hra;
+    cout << "Enter Medical Allowance: ";
+    cin >> medical;
+    
+    gross = basic + hra + medical;
+    
+    cout << "Gross Salary = Rs. " << gross << endl;
+    return 0;
+}
+---
+
+*Program 5: Petrol Expense Calculator*
+#include <iostream>
+using namespace std;
+
+int main() {
+    float distance, avg, price;
+    float fuel, cost;
+    
+    cout << "Enter Distance Travelled (km): ";
+    cin >> distance;
+    cout << "Enter Average km per litre: ";
+    cin >> avg;
+    cout << "Enter Petrol Price per litre: ";
+    cin >> price;
+    
+    fuel = distance / avg;
+    cost = fuel * price;
+    
+    cout << "Fuel Consumed = " << fuel << " litres" << endl;
+    cout << "Total Fuel Cost = Rs. " << cost << endl;
+    return 0;
+}
